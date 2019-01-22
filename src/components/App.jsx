@@ -37,7 +37,6 @@ class App extends React.Component {
   }
   handleClick(event) {
     var obj = Object.assign(this.state);
-    console.log(obj)
     this.props.sendPost(obj, (data) => {
       console.log(data)
       this.setState((state, props) => {
